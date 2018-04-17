@@ -30,6 +30,6 @@ describe('multiply()', function() {
   });
   it('should be able to handle strings that are not numbers', function() {
     var result = multiply('potato', 2);
-    expect(result).to.equal(NaN);
+    expect(result).is.NaN;
   });
 });
