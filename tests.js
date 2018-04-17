@@ -6,6 +6,14 @@ describe('add()', function() {
     var sum = add(4, 2);
     expect(sum).to.equal(6);
   });
+  it('should be able to handle strings that are numbers', function() {
+    var difference = add('5', 2);
+    expect(difference).to.equal(7);
+  });
+  it('should be able to handle strings that are not numbers', function() {
+    var result = add('potato', 2);
+    expect(result).is.NaN;
+  });
 });
 
 describe('subtract()', function() {
@@ -13,9 +21,13 @@ describe('subtract()', function() {
     var difference = subtract(2, 5);
     expect(difference).to.equal(-3);
   });
-  it('should be able to handle strings as if they were numbers', function() {
+  it('should be able to handle strings that are numbers', function() {
     var difference = subtract('5', 2);
     expect(difference).to.equal(3);
+  });
+  it('should be able to handle strings that are not numbers', function() {
+    var result = subtract('potato', 2);
+    expect(result).is.NaN;
   });
 });
 
@@ -33,3 +45,18 @@ describe('multiply()', function() {
     expect(result).is.NaN;
   });
 });
+
+describe('divide()', function(){
+  it('should divide the first number by the second', function(){
+    const result = divide(8, 2);
+    expect(result).to.equal(4);
+  });
+  it('should be able to handle strings that are numbers', function() {
+    var result = divide('5', 2);
+    expect(result).to.equal(2.5);
+  });
+  it('should be able to handle strings that are not numbers', function() {
+    var result = divide('potato', 2);
+    expect(result).is.NaN;
+  });
+})
