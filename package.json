@@ -1,0 +1,19 @@
+{
+  "name": "mocha-chai",
+  "version": "0.0.1",
+  "description": "Mocha Chai Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryosx/mocha-chai.git"
+  },
+  "author": "Cyrus Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryosx/mocha-chai/issues"
+  },
+  "homepage": "https://github.com/cryosx/mocha-chai#readme"
+}
